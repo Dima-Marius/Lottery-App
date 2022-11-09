@@ -1,0 +1,171 @@
+.modal-container {
+    color:white;
+    background-color: #2b1249;
+    bottom:50%;
+    z-index:3;
+    height: 46rem; /* 700 px*/
+    width: 80rem;/*1250px; */
+    border:solid 1px plum;
+    border-radius: 20px;
+    position:absolute;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    display:flex;
+    flex-direction: row;
+
+}
+
+.photo {
+    width: 50%;
+    height:100%;
+}
+
+.right {
+    width:50%;
+    height:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    gap: 100px;
+}
+
+.title-container {
+    flex-grow: 4;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    color:aqua;
+    font-weight: bold;
+    font-family: Oswald;
+    font-size: 30px;
+    position:relative;
+    top:30px;
+
+}
+
+.modalImage {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-right: solid 3px black;
+}
+
+.info-container {
+    flex-grow: 5;
+    display:flex;
+    flex-direction: column;
+}
+
+.h2 {
+    position:relative;
+    left:1.5rem;
+    bottom: 1rem;
+    font-weight:bold;
+    font-family:Oswald;
+    color:coral;
+}
+
+.input-form {
+    flex-grow:10;
+    display:flex;
+    position: relative;
+    right: 4rem;
+}
+
+.features {
+    font-weight: bold;
+    font-family: Oswald;
+}
+
+.close-button {
+    position:absolute;
+    top:1rem;
+    display:inline-block;
+
+    right:1rem;
+    font-size:22px;
+    font-family: Oswald;
+    font-weight:bolder;
+    color:rgb(182, 36, 36)
+}
+
+.info ul li {
+    font-weight: bold;
+    font-family: Oswald;
+    font-size: 18px;
+    margin-left: 30px;
+    color:rgb(167, 115, 96)
+}
+
+.features {
+    margin-top: 50px;
+}
+
+.overlay {
+  position: fixed; 
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+  cursor: pointer;
+}
+
+.featuresTitle {
+    font-family: Oswald;
+    color:coral;
+    position:relative;
+    left:1.5rem;
+    margin-bottom:10px;
+}
+
+.submit {
+    position: relative;
+    left:40px;
+    bottom:4px;
+        box-shadow: 0px 0px 0px 2px #9fb4f2;
+        background:linear-gradient(to bottom, #1cb6ca 5%, #476e9e 100%);
+        background-color:#1cb3a6;
+        border-radius:10px;
+        border:1px solid #4e6096;
+        display:inline-block;
+        cursor:pointer;
+        color:#ffffff;
+        font-family:Oswald;
+        color:rgb(226, 226, 226);
+        font-size:19px;
+        padding:2px 15px;
+        text-decoration:none;
+        text-shadow:0px 1px 0px #283966;
+    }
+    .submit:hover {
+        background:linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+        background-color:#476e9e;
+    }
+    .submit:active {
+        position:relative;
+        top:1px;
+    }
+    
+
+    .nameInput {
+        color: aquamarine;
+        font-family: Oswald;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .githublink {
+        font-family: Oswald;
+        color:wheat;
+        position:relative;
+        top:20px;
+        left:25px;
+    }

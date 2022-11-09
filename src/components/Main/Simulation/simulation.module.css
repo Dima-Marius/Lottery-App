@@ -1,0 +1,7 @@
+.simulation-container {
+    width: 93%;
+    height:34rem;
+    margin-left:3.7rem;
+    background-color: #2b3749;
+    overflow: auto;
+}

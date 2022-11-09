@@ -1,0 +1,101 @@
+.stats-container {
+    width: 64%;
+    height: 20rem;
+    background-color: #2b3749;
+    position:absolute;
+    top:8.2rem;
+    right:4rem;
+    border-radius: 28px;
+}
+
+.stats-container-on {
+    width: 64%;
+    display:flex;
+    height: 20rem;
+    background-color: #2b3749;
+    position:absolute;
+    top:8.2rem;
+    right:4rem;
+    border-radius: 28px;
+}
+
+.notickets {
+    font-size: 50px;
+    text-align: center;
+    position:relative;
+    top:5.5rem;
+    color:rgb(185, 85, 85)
+}
+
+.info {
+    margin:40px 10px 10px 50px;
+    padding-right:30px;
+    font-size:25px;
+    color:rgb(216, 111, 13);
+    font-family: Oswald;
+    text-align: center;
+}
+
+.combinations-title {
+    color:(216, 111, 13)
+}
+
+.three,.four,.five,.six {
+    font-weight: bold;
+    margin-top:1px;
+}
+
+.three {
+    color:greenyellow;
+    margin-top:10px;
+}
+
+.four {
+    color:green;
+}
+
+.five {
+    color:rgb(221, 16, 16);
+}
+
+.six {
+    color:gold
+}
+
+.h2 {
+    font-family: Oswald;
+    font-size:40px;
+    color:aquamarine;
+    position:absolute;
+    top:-2rem;
+    left:2.7rem;
+}
+
+.container-right {
+    border-left: solid 1px rgb(0, 0, 0);
+    display:flex;
+    padding: 1.6rem 0rem 0rem 2rem;
+    justify-content: center;
+    align-items: center;
+        
+
+}
+
+.fact {
+    color: peru;
+    text-align: center;
+    margin-left: 2.7rem;
+    font-size: 20px;
+    font-family: Oswald;
+    position:relative;
+    right:20px;
+}
+
+.fact-list {
+    width:500px;
+    list-style-type: none;
+}
+
+.date-info {
+    color:rgb(35, 233, 29);
+}

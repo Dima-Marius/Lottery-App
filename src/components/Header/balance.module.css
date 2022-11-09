@@ -1,0 +1,35 @@
+.aa {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Oswald, sans-serif;
+    color:rgb(6, 245, 205);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.hide {
+    display:none;
+}
+
+.wallet.money {
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    position:relative;
+    top:0.4rem;
+    right:2rem;
+}
+
+.span {
+    right:2.4rem;
+    top:-0.6rem;
+    position:relative;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Oswald, sans-serif;
+    color:rgb(6, 245, 205);
+    text-decoration: none;
+}
