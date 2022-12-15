@@ -18,7 +18,6 @@ const Settings = (props) => {
         props.onSelectCurrency(e.target.value)
     }
 
-
     const formSubmitHandler = (e) => {
         e.preventDefault();
     props.onTicketNumbers(ticketNumbers);

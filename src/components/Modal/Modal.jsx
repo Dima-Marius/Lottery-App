@@ -1,22 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import style from './modal.module.css'
 import modalImage from './modal.jpg'
+import ReactDOM from 'react-dom'
 
-const Modal = ( {openModal,onUserName} ) => {
+const Backdrop = () => {
+  return <div className={style.backdrop}></div>
+}
 
-
-    const formSubmitHandler = (e) => {
-        e.preventDefault();
-        onUserName(e.target[0].value,false);
-    }
-
-
-    if (!openModal) { return null }
+const Overlay = ({onUserName}) => {
+  const formSubmitHandler = (e) => {
+    e.preventDefault();
+    onUserName(e.target[0].value,false);
+  }
   return (
-    <React.Fragment>
-    <div className={style.overlay}></div>
-    <div className={style['modal-container']}>
-        <div className={style.photo}><img className={style.modalImage} src={modalImage} width='100%' height='100%' alt='Lottery Image'></img></div>
+  <div className={style['modal-container']}>
+        <div className={style.photo}><img className={style.modalImage} src={modalImage} width='100%' height='100%' alt='Lottery Player'></img></div>
         <div className={style.right}>
           <div className={style['close-button']}>X</div>
           <div className={style['title-container']}>
@@ -51,6 +49,17 @@ const Modal = ( {openModal,onUserName} ) => {
           </div>
         </div>
         </div>
+  )
+}
+
+const Modal = ( {openModal,onUserName} ) => {
+  if (!openModal) 
+  return;
+  else
+  return (
+    <React.Fragment>
+      {ReactDOM.createPortal(<Backdrop openModal={openModal}/>, document.getElementById('backdrop-root'))}
+      {ReactDOM.createPortal(<Overlay onUserName={onUserName} openModal={openModal}/>, document.getElementById('modal-root'))}
     </React.Fragment>
   )
 }

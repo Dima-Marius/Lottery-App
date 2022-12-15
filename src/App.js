@@ -2,20 +2,17 @@ import Navbar from './components/Header/Navbar';
 import MainContainer from './components/Main/MainContainer';
 import React, { useState } from 'react';
 import Modal from './components/Modal/Modal';
-import { flushSync } from 'react-dom';
+// import { flushSync } from 'react-dom';
 import './App.css';
 import './grid.css'
 
 function App() {
 
   const [openModal, setOpenModal] = useState(true)
-  const user = 'Guest' // prompt('enter your name')
   const [username, setUsername] = useState('')
-  const balance = 0;
   const [userBalance, setUserBalance] = useState(0)
   const [hideBalance, setHideBalance] = useState(true)
   const [userprofit, setProfit] = useState(0)
-  const [placeholder, setPlaceholder] = useState(0)
   const [selectedCurrency, setSelectedCurrency] = useState('RON')
   
   const onGetProfit = (data) => {

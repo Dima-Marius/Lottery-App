@@ -112,7 +112,7 @@ for (let i = 0; i < tickets ; i++) {
 
 
 
-//////////////////////////////////////////////// END SKID SKILLS
+//////////////////////////////////////////////// END
 
 const clearHandler = () => {
     setUserTicket([]);
@@ -123,7 +123,6 @@ const onTicketNumbers = (data) => {
 
 }
 
-let lastObj;
 
 
 const passProfit = () => {
@@ -144,7 +143,7 @@ useEffect(() => {
     setUserTicket(main_tickets);
     setSpentCash(ticketNumbers * 7)
     //(main_tickets.length > 1 ? main_tickets.reduce((acc,obj) => acc + obj.spent,0) : 0)
-    lastObj = main_tickets[10] // get profit, No idea how it works, dont touch
+    const lastObj = main_tickets[10] // get profit, No idea how it works, dont touch
     setGainedCash(lastObj ? lastObj.profit : 0)
     setCombinations(winningCombinations)
     console.log(winningCombinations)

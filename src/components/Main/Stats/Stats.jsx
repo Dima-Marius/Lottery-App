@@ -3,7 +3,7 @@ import style from './stats.module.css'
 
 const Stats = ({spentCash,combinations,ticketNumbers}) => {
 
-    const today = new Date().toJSON().slice(0,10).replace(/-/g,'/');  
+ //   const today = new Date().toJSON().slice(0,10).replace(/-/g,'/');  
 
     if (!spentCash) {
         return (
